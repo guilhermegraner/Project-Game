@@ -1,6 +1,11 @@
  body {
     padding: 0;
     text-align: center;
+    background-image: url(../images/vaderDomestic.jpg);
+    background-repeat: no-repeat;
+    background-size: 564px 1100px;
+    background-position: right 12% bottom 45%;
+    
   }
   
   .game-page{
@@ -13,8 +18,8 @@
   }
   
   .game-intro p {
-    font-size: 18px;
-    font-family: "Verdana";
+    font-size: 14px;
+    font-family: "Starjedi";
   }
   
   .logo-img {
@@ -22,18 +27,22 @@
   }
   
   .arrows-img {
-    width: 150px;
+    width: 200px;
+    height: 130px;
   }
   
   body button {
-    font-size: 30px;
-    background-color: #870007;
-    color: #fff;
-    padding: 20px 40px;
+    font-family: "Starjedi";
+    font-size: 23px;
+    /* background-color: black;
+    color: yellow; */
+    padding: 15px 35px;
     border: 0;
     box-shadow: 0;
     border-radius: 5px;
     margin-bottom: 20px;
+    background-color: #870007;
+    color: #fff;
   }
   
   #game-board {
@@ -45,3 +54,7 @@
     border: 1px solid black;
   }
   
+  @font-face {
+    font-family: 'Starjedi';
+    src: url('../fonts/starjedi/Starjedi.ttf');
+  }
