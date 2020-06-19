@@ -63,7 +63,7 @@ window.onload = () => {
         const ctx = myGameArea.context;
         if (this.isMillennium) {
           const millenniumImg = new Image();
-          millenniumImg.src = "../images/millenniumFalcon7.png";
+          millenniumImg.src = "images/millenniumFalcon7.png";
           ctx.drawImage(millenniumImg, this.x, this.y, 68, 80);
         } else {
           ctx.fillStyle = this.color;
@@ -71,12 +71,12 @@ window.onload = () => {
         }
         if (this.isAward){
             const masterYodaImg = new Image();
-            masterYodaImg.src = "../images/masterYoda.png";
+            masterYodaImg.src = "images/masterYoda.png";
             ctx.drawImage(masterYodaImg, this.x, this.y, 80, 80)
         }
         if (this.isObstacle){
             const tieImg = new Image();
-            tieImg.src = "../images/tieFighterBlue.png"; 
+            tieImg.src = "images/tieFighterBlue.png"; 
             ctx.drawImage(tieImg, this.x, this.y, 80, 80)
         }
       }
@@ -199,7 +199,7 @@ window.onload = () => {
         swLose.play(); 
         return function (){
           const gameOverImg = new Image();
-          gameOverImg.src = `../images/palpatineHappy.png`;
+          gameOverImg.src = `images/palpatineHappy.png`;
           ctx.drawImage(gameOverImg, this.x, this.y, 200, 200);
       }
       } 
