@@ -149,7 +149,7 @@ window.onload = () => {
     function updateObstacles() {
         
         for (let i = 0; i < myObstacles.length; i += 1) {
-            myObstacles[i].y += 2.5;
+            myObstacles[i].y += 3.5;
             myObstacles[i].update();
         }
 
@@ -180,7 +180,7 @@ window.onload = () => {
     function extraPoints() {
         const collectAward = myExtraPoints.some( award => millennium.crashWith(award));
         if (collectAward){
-            myWinPoint += 1000;
+            myWinPoint += 50;
             return console.log("Collected!!"), myExtraPoints.pop();
         }
     }
