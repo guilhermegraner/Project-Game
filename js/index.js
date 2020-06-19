@@ -15,7 +15,7 @@ window.onload = () => {
       context: this.canvas.getContext('2d'),
       drawSpace: function () {
         const spaceImg = new Image();
-        spaceImg.src = `../images/spaceBlack.png`;
+        spaceImg.src = `images/spaceBlack.png`;
         const that = this;
         that.context.drawImage(spaceImg, 0, 0, 500, 700);
       },
