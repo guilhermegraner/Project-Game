@@ -4,10 +4,10 @@ window.onload = () => {
     let myWinPoint = 0;
     
     let swSong = new Audio();
-    swSong.src = '../songs/28. FrontEnd Credits 01.mp3'
+    swSong.src = '../songs/28_FrontEndCredits01.mp3'
 
     let swLose = new Audio();
-    swLose.src = '../songs/92. Hoth Battles Imperial Lose 01a.mp3'
+    swLose.src = '../songs/92_Hoth_Battles_Imperial_Lose_01a.mp3'
 
   // Configuração da Área do Canvas 
     const myGameArea = {
@@ -117,11 +117,6 @@ window.onload = () => {
       swSong.play();
     }
 
-  
-    
-  
-    // console.log(myGameArea, AnimationObjects);
-
     //Chamada dos  botões para  controlar a millennium Falcon.
     document.addEventListener('keydown', (e) => {
       switch (e.keyCode) {
@@ -204,13 +199,6 @@ window.onload = () => {
       }
       } 
     }
-
-    /* const ctx = myGameArea.context;
-        if (this.isMillennium) {
-          const millenniumImg = new Image();
-          millenniumImg.src = "../images/millenniumFalcon7.png";
-          ctx.drawImage(millenniumImg, this.x, this.y, 68, 80); */
-
 
     document.getElementById('restart-button').onclick = () => {
         restartGame();
